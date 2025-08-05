@@ -1,68 +1,68 @@
-YouTube Video Downloader
-A simple and elegant GUI application built with Python and customtkinter for downloading YouTube videos. This project provides two versions of the downloader: a lightweight basic version and a feature-rich advanced version.
+# YouTube Video Downloader
 
-Features
-Basic Version (youtube_downloader_basic.py)
+A simple and elegant GUI application built with Python and `customtkinter` for downloading YouTube videos. This project provides two versions of the downloader: a lightweight basic version and a feature-rich advanced version.
 
-Simple and fast.
+## Features
 
-Downloads videos that are available as a single "progressive" stream (up to 720p).
+  - **Basic Version (`youtube_downloader_basic.py`)**
 
-Supports audio-only downloads.
+      - Simple and fast.
+      - Downloads videos that are available as a single "progressive" stream (up to 720p).
+      - Supports audio-only downloads.
 
-Advanced Version (youtube_downloader_high_quality.py)
+  - **Advanced Version (`youtube_downloader_high_quality.py`)**
 
-Supports downloading videos in the highest available quality (1080p, 4K, etc.).
+      - Supports downloading videos in the highest available quality (1080p, 4K, etc.).
+      - Automatically downloads separate video and audio streams and merges them using the `moviepy` library.
+      - Supports audio-only downloads.
 
-Automatically downloads separate video and audio streams and merges them using the moviepy library.
+## Prerequisites
 
-Supports audio-only downloads.
-
-Prerequisites
 To run this application, you need to have the following installed on your system:
 
-Python 3.6+
+  - **Python 3.6+**
+  - **pip** (Python package installer)
+  - **ffmpeg** (required for the advanced version to merge video and audio)
 
-pip (Python package installer)
+You can download `ffmpeg` from [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) and ensure it is added to your system's PATH.
 
-ffmpeg (required for the advanced version to merge video and audio)
+## Installation
 
-You can download ffmpeg from https://ffmpeg.org/download.html and ensure it is added to your system's PATH.
+1.  Clone this repository to your local machine or download the files.
 
-Installation
-Clone this repository to your local machine or download the files.
+2.  Navigate to the project directory in your terminal.
 
-Navigate to the project directory in your terminal.
+3.  Install the required Python packages for the **basic version**:
 
-Install the required Python packages for the basic version:
+    ```bash
+    pip install customtkinter pytubefix
+    ```
 
-Bash
+4.  If you want to run the **advanced version**, install `moviepy` as well:
 
-pip install customtkinter pytubefix
-If you want to run the advanced version, install moviepy as well:
+    ```bash
+    pip install moviepy
+    ```
 
-Bash
+## How to Use
 
-pip install moviepy
-How to Use
 To launch either version of the application, simply run the corresponding Python script from your terminal:
 
-For the Basic Version:
+**For the Basic Version:**
 
-Bash
-
+```bash
 python youtube_downloader_basic.py
-For the Advanced Version:
+```
 
-Bash
+**For the Advanced Version:**
 
+```bash
 python youtube_downloader_high_quality.py
+```
+
 After the application window appears:
 
-Paste the URL of the YouTube video into the text box.
-
-Select your desired video quality from the dropdown menu.
-
-Choose your download path by clicking the "Browse" button.
-
-Click "Download" to start the process. The progress bar will show the download status.
+1.  Paste the URL of the YouTube video into the text box.
+2.  Select your desired video quality from the dropdown menu.
+3.  Choose your download path by clicking the "Browse" button.
+4.  Click "Download" to start the process. The progress bar will show the download status.
