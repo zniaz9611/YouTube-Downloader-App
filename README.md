@@ -51,13 +51,13 @@ To launch either version of the application, simply run the corresponding Python
 **For the Basic Version:**
 
 ```bash
-python youtube_downloader_basic.py
+python youtubeDownloaderBasic.py
 ```
 
 **For the Advanced Version:**
 
 ```bash
-python youtube_downloader_high_quality.py
+python youtubeDownloaderHighQuality.py
 ```
 
 After the application window appears:
