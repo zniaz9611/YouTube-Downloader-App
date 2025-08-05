@@ -4,13 +4,13 @@ A simple and elegant GUI application built with Python and `customtkinter` for d
 
 ## Features
 
-  - **Basic Version (`youtube_downloader_basic.py`)**
+  - **Basic Version (`youtubeDownloaderBasic.py`)**
 
       - Simple and fast.
       - Downloads videos that are available as a single "progressive" stream (up to 720p).
       - Supports audio-only downloads.
 
-  - **Advanced Version (`youtube_downloader_high_quality.py`)**
+  - **Advanced Version (`youtubeDownloaderHighQuality.py`)**
 
       - Supports downloading videos in the highest available quality (1080p, 4K, etc.).
       - Automatically downloads separate video and audio streams and merges them using the `moviepy` library.
@@ -35,10 +35,10 @@ You can download `ffmpeg` from [https://ffmpeg.org/download.html](https://ffmpeg
 3.  Install the required Python packages for the **basic version**:
 
     ```bash
-    pip install customtkinter pytubefix
+    pip install tkinter customtkinter pytubefix
     ```
 
-4.  If you want to run the **advanced version**, install `moviepy` as well:
+4.  If you want to run the **advanced version**, install `moviepy` as well: 1.0,3
 
     ```bash
     pip install moviepy
